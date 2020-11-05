@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <caesar.h>
+#include "caesar.h"
 
 void gen_test(char *str, int shift)
 {
