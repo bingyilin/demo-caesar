@@ -36,7 +36,6 @@ char *caesar_encrypt(char *str, int shift)
             else
                 /* Spaces and other characters are not encrypted. */
                 buf[i] = *str;
-			printf("%c", buf[i]);
             i++;
             str++;
 
