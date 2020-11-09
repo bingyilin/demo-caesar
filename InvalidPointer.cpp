@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	char *p;
+	char *p = 0;
 
 	strcpy(p, "hello");
 	cout << p << endl;
