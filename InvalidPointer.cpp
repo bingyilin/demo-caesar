@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	char *p = (char *)malloc(100);
+	char *p;
 
 	strcpy(p, "hello");
 	cout << p << endl;
