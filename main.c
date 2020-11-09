@@ -20,7 +20,7 @@ void gen_test(char *str, int shift)
     free(res2);
 }
 
-/**int main(void)
+int main(void)
 {
     check_magic_number();
 
@@ -32,4 +32,4 @@ void gen_test(char *str, int shift)
     gen_test(orig_str, 7);
 
     return 0;
-}**/
+}

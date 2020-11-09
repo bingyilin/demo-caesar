@@ -5,6 +5,17 @@
 
 using namespace std;
 
+void check_magic_number(void)
+{
+	short tmp = (short)(0x1234 << 8);
+	cout << tmp << endl;
+
+	char c = ((char *)&tmp)[0];
+	cout << c << endl;
+	int i = 0 << (int)c;
+
+	cout << i << endl;
+}
 
 void foo(const char* input)
 {
@@ -20,6 +31,7 @@ void bar(void)
 }
 int main(int argc, char* argv[])
 {
+	check_magic_number();
 //	printf("Address of foo = %p\n", foo);
 //	printf("Address of bar = %p\n", bar);
 	if (argc != 2)
@@ -27,7 +39,7 @@ int main(int argc, char* argv[])
 		printf("Please supply a string as an argument!\n");
 		return -1;
 	}
-	foo(argv[1]);
+//	foo(argv[1]);
 	printf("Exit!\n");
 	return 0;
 }
