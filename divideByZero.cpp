@@ -8,7 +8,9 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	int a = atoi(argv[1]);
+	char zeroC = 'NUL';
+	int a = zeroC >> 8;
+	cout << a << endl;
 	int result = 100 / a;
 	cout << result << endl;
 	//for (int i = 0; i < 10; i++) {
