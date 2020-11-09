@@ -20,8 +20,8 @@ void bar(void)
 }
 int main(int argc, char* argv[])
 {
-	printf("Address of foo = %p\n", foo);
-	printf("Address of bar = %p\n", bar);
+//	printf("Address of foo = %p\n", foo);
+//	printf("Address of bar = %p\n", bar);
 	if (argc != 2)
 	{
 		printf("Please supply a string as an argument!\n");
