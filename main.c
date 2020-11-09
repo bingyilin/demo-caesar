@@ -20,16 +20,16 @@ void gen_test(char *str, int shift)
     free(res2);
 }
 
-//int main(void)
-//{
-//    check_magic_number();
-//
-//    char orig_str[] = "People of Earth, your attention please";
-//
-//    printf("Test 1: Shift with a negative input\n");
-//    gen_test(orig_str, -3);
-//    printf("\nTest 2: Shift with a positive input\n");
-//    gen_test(orig_str, 7);
-//
-//    return 0;
-//}
+int main(void)
+{
+    check_magic_number();
+
+    char orig_str[] = "People of Earth, your attention please";
+
+    printf("Test 1: Shift with a negative input\n");
+    gen_test(orig_str, -3);
+    printf("\nTest 2: Shift with a positive input\n");
+    gen_test(orig_str, 7);
+
+    return 0;
+}

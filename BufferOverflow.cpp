@@ -18,11 +18,11 @@ void bar(void)
 {
 	printf("Augh! I've been hacked!\n");
 }
-int main(int argc, char* argv[])
-{
-	//printf("Address of foo = %p\n", foo);
-	//printf("Address of bar = %p\n", bar);
-	foo("ABCDEFGHIJKLMN");
-	printf("Exit!\n");
-	return 0;
-}
+//int main(int argc, char* argv[])
+//{
+//	//printf("Address of foo = %p\n", foo);
+//	//printf("Address of bar = %p\n", bar);
+//	foo("ABCDEFGHIJKLMN");
+//	printf("Exit!\n");
+//	return 0;
+//}
