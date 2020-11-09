@@ -31,15 +31,23 @@ void bar(void)
 }
 int main(int argc, char* argv[])
 {
-	check_magic_number();
+//	check_magic_number();
 //	printf("Address of foo = %p\n", foo);
 //	printf("Address of bar = %p\n", bar);
-	if (argc != 2)
-	{
-		printf("Please supply a string as an argument!\n");
-		return -1;
-	}
+	//if (argc != 2)
+	//{
+	//	printf("Please supply a string as an argument!\n");
+	//	return -1;
+	//}
 //	foo(argv[1]);
+
+	for(int i = 0; i < 10; i ++){
+		int randomNum = rand() % 10;
+		int result = 100 /randomNum;
+		cout << result << endl;
+	}
+
+
 	printf("Exit!\n");
 	return 0;
 }

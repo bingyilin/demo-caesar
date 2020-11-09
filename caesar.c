@@ -2,6 +2,7 @@
 
 #define NB_LTR ('z' - 'a' + 1)
 
+
 void check_magic_number(void)
 {
     short tmp = (short)(0x1234 << 8);
@@ -27,15 +28,18 @@ char *caesar_encrypt(char *str, int shift)
 
     if (buf) {
         while (*str) {
-            if (*str >= 'a' && *str <= 'z')
-                buf[i] = (*str + abs_shift - 'a') % NB_LTR + 'a';
-            else if (*str >= 'A' && *str <= 'Z')
+			if (*str >= 'a' && *str <= 'z') {
+				buf[i] = (*str + abs_shift - 'a') % NB_LTR + 'a';
+			}
+            if (*str >= 'A' && *str <= 'Z')
                 buf[i] = (*str + abs_shift - 'A') % NB_LTR + 'A';
             else
                 /* Spaces and other characters are not encrypted. */
                 buf[i] = *str;
+			printf("%c", buf[i]);
             i++;
             str++;
+
         }
         buf[i] = '\0';
     }
