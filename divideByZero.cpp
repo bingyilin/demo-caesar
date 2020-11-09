@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 {
 
 	for (int i = 0; i < 10; i++) {
-		int randomNum = 0;
+		int randomNum = rand() % 10;
 		int result = 100 / randomNum;
 		cout << result << endl;
 	}
