@@ -30,6 +30,10 @@ int char2int(const char* str) {
 	return res;
 }
 
+char justTest(int i) {
+	return i;
+}
+
 
 int noMain(int argc, char* argv[])
 {
