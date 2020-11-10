@@ -7,14 +7,35 @@
 using namespace std;
 
 
+/***½«×Ö·û´®×ª³Éint***/
+int char2int(const char* str) {
+	const char* p = str;
+	bool neg = false;
+	int res = 0;
+	if (*str == '-' || *str == '+') {
+		str++;
+	}
+
+	while (*str != 0) {
+		if (*str < '0' || *str > '9') {
+			break;
+		}
+		res = res * 10 + *str - '0';
+		str++;
+	}
+
+	if (*p == '-') {
+		res = -res;
+	}
+	return res;
+}
+
+
 int main(int argc, char* argv[])
 {
-	ifstream readFile("Test.txt");
-	char temp[1024] = { 0 };
-	readFile >> temp;
-	readFile.close();
-	int a = temp[0] - '0';
 
+	char* c = argv[1];
+	int a = char2int(c);
 
 	//char zeroC = 'NUL';
 	//int a = zeroC >> 8;
