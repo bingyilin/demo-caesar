@@ -6,15 +6,17 @@
 
 using namespace std;
 
+char *GetMemory(void) {
+	char p[] = "hello world";
+	return p;
+}
+void Test(void) {
+	char *str = NULL;
+	str = GetMemory();
+	printf(str);
+}
 
-//int main(int argc, char* argv[])
-//{
-//	char *p = 0;
-//
-//	strcpy(p, "hello");
-//	cout << p << endl;
-//	free(p); // p 所指的内存被释放，但是p所指的地址仍然不变
-//
-//	cout << p << endl;
-//	return 0;
-//}
+int invalidpointer(int argc, char* argv[])
+{
+	Test();
+}
