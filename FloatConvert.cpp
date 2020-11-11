@@ -6,9 +6,9 @@
 using namespace std;
 
 
-//int main(int argc, char* argv[])
-//{
-//	float i = FLT_MAX;
-//	int k = i;
-//	cout << k << endl;
-//}
+int main(int argc, char* argv[])
+{
+	float i = 1.496E10;
+	int k = i;
+	cout << k << endl;
+}

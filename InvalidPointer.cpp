@@ -7,8 +7,8 @@
 using namespace std;
 
 
-int main(int argc, char* argv[])
-{
-	int *p;
-	return (*p & 0x7f); /* XXX: p is a wild pointer */
-}
+//int main(int argc, char* argv[])
+//{
+//	int *p;
+//	return (*p & 0x7f); /* XXX: p is a wild pointer */
+//}

@@ -35,7 +35,7 @@ char justTest(int i) {
 }
 
 
-int main(int argc, char* argv[])
+int nomain(int argc, char* argv[])
 {
 
 	char* c = argv[1];
