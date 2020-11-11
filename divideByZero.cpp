@@ -1,8 +1,7 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <iostream> 
-#include<fstream>
+#include <iostream>
+#include <fstream>
+#include <cassert>
+#include <string>
 
 using namespace std;
 
@@ -30,14 +29,28 @@ int char2int(const char* str) {
 	return res;
 }
 
-char justTest(int i) {
-	return i;
+int readTxt()
+{	
+	string file = "Test.txt";
+	ifstream infile;
+	infile.open(file.data());   //将文件流对象与文件连接起来 
+	assert(infile.is_open());   //若失败,则输出错误消息,并终止程序运行 
+
+	string s;
+	while (getline(infile, s))
+	{
+		int i = atoi(s.c_str());
+		int result = 100 / i;
+	}
+	infile.close();             //关闭文件输入流 
+	return 0;
 }
 
 
-int nomain(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 
+	readTxt();
 	char* c = argv[1];
 	int a = char2int(c);
 
