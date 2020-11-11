@@ -50,7 +50,7 @@ int readTxt()
 int main(int argc, char* argv[])
 {
 
-//	readTxt();
+	readTxt();
 	//char* c = argv[1];
 	//int a = char2int(c);
 
@@ -61,11 +61,11 @@ int main(int argc, char* argv[])
 	//int result = 100 / a;
 	//cout << result << endl;
 	//result = result / 0;
-	for (int i = 0; i < 10; i++) {
-		int randomNum = rand() % 10;
-		int result = 100 / randomNum;
-		cout << result << endl;
-	}
+	//for (int i = 0; i < 10; i++) {
+	//	int randomNum = rand() % 10;
+	//	int result = 100 / randomNum;
+	//	cout << result << endl;
+	//}
 
 
 	printf("Exit!\n");
