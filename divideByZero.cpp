@@ -31,7 +31,7 @@ int char2int(const char* str) {
 
 int readTxt()
 {	
-	string file = "Test.txt";
+	string file = "Test1.txt";
 	ifstream infile;
 	infile.open(file.data());   //将文件流对象与文件连接起来 
 //	assert(infile.is_open());   //若失败,则输出错误消息,并终止程序运行 
