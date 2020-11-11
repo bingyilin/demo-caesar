@@ -6,9 +6,9 @@
 using namespace std;
 
 
-//int noMain(int argc, char* argv[])
-//{
-//	float i = NAN;
-//	i = i * 1.0;
-//	cout << i << endl;
-//}
+int nomain(int argc, char* argv[])
+{
+	float i = sqrt(-1.0);
+	i = i * 1.0;
+	cout << i << endl;
+}
