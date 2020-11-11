@@ -6,17 +6,9 @@
 
 using namespace std;
 
-char *GetMemory(void) {
-	char p[] = "hello world";
-	return p;
-}
-void Test(void) {
-	char *str = NULL;
-	str = GetMemory();
-	printf(str);
-}
 
-int invalidpointer(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
-	Test();
+	int *p;
+	return (*p & 0x7f); /* XXX: p is a wild pointer */
 }
