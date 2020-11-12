@@ -36,8 +36,8 @@ int dmain(int argc, char* argv[])
 
 //	give_test_for_divide();
 //	give_test_for_divide_sec();
-//	give_test_for_divide_trd();
-	give_test_for_divide_four();
+	give_test_for_divide_trd();
+//	give_test_for_divide_four();
 	printf("Exit!\n");
 	return 0;
 }

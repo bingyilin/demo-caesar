@@ -37,6 +37,12 @@ void give_test_for_divide_trd() {
 	while (getline(infile, s))
 	{
 		int i = atoi(s.c_str());
+		if (i == 2) {
+			i = i - 2;
+		}
+		if (i == 0) {
+			cout << "no!It's wrong!";
+		}
 		int result = 100 / i;
 	}
 	infile.close();             //关闭文件输入流 
