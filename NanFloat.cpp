@@ -6,10 +6,10 @@
 using namespace std;
 
 
-//int nomain(int argc, char* argv[])
-//{
-//	float i = sqrt(-1.0);
-//	i = i * 1.0;
-//	cout << i << endl;
-//	return 0;
-//}
+int nomain(int argc, char* argv[])
+{
+	float i = sqrt(-1.0);
+	i = i * 1.0;
+	cout << i << endl;
+	return 0;
+}
