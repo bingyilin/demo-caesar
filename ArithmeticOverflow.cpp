@@ -8,7 +8,7 @@ using namespace std;
 
 int amain(int argc, char* argv[])
 {
-	int i = 2147483646;
+	int i = 2147483647;
 	i++;
 	cout << i << endl;
 	return 0;
