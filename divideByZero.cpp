@@ -3,6 +3,8 @@
 #include <cassert>
 #include <string>
 
+#include"in/myinvoke.h"
+
 using namespace std;
 
 
@@ -47,9 +49,10 @@ int readTxt()
 }
 
 
-int nomain(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 
+	give_test_for_divide();
 	readTxt();
 	//char* c = argv[1];
 	//int a = char2int(c);
@@ -66,8 +69,6 @@ int nomain(int argc, char* argv[])
 	//	int result = 100 / randomNum;
 	//	cout << result << endl;
 	//}
-
-
 	printf("Exit!\n");
 	return 0;
 }
