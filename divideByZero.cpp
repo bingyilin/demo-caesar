@@ -31,7 +31,7 @@ int char2int(const char* str) {
 	return res;
 }
 
-int main(int argc, char* argv[])
+int dmain(int argc, char* argv[])
 {
 
 //	give_test_for_divide();
